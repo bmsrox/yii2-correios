@@ -41,7 +41,7 @@
                     var $input = jQuery('#' + this.fields[prop]);
                     if ($input.length) {
                         if (prop in data) {
-                            $input.val(data[prop]);
+                            $input.val(data[prop].trim());
                         } else {
                             $input.val('');
                         }
